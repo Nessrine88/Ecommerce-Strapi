@@ -38,17 +38,15 @@
       "type": "boolean"
     },
     "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "whatsIncluded": {
-      "type": "blocks"
+      ]
     },
     "category": {
       "type": "enumeration",
@@ -63,6 +61,9 @@
       "relation": "manyToMany",
       "target": "api::order.order",
       "mappedBy": "products"
+    },
+    "whatsIncluded": {
+      "type": "richtext"
     }
   }
 }
