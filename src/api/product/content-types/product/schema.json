@@ -31,9 +31,6 @@
         "audios"
       ]
     },
-    "price": {
-      "type": "decimal"
-    },
     "instantDelivery": {
       "type": "boolean"
     },
@@ -64,6 +61,22 @@
     },
     "whatsIncluded": {
       "type": "richtext"
+    },
+    "quantity": {
+      "type": "enumeration",
+      "enum": [
+        "ml50",
+        "ml100",
+        "ml250",
+        "ml500",
+        "L1"
+      ]
+    },
+    "Price": {
+      "displayName": "prices",
+      "type": "component",
+      "repeatable": true,
+      "component": "prices.prices"
     }
   }
 }

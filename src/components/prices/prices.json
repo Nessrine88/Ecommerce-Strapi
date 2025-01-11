@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_prices_prices",
+  "info": {
+    "displayName": "prices"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "float"
+    }
+  }
+}

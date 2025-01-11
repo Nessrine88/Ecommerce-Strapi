@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_quantity_quantities",
+  "info": {
+    "displayName": "quantity"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "enumeration",
+      "enum": [
+        "Q-50-ml",
+        "Q-100-ml",
+        "Q-200-ml",
+        "Q-250-ml",
+        "Q-500-ml",
+        "Q-1000-ml"
+      ]
+    }
+  }
+}

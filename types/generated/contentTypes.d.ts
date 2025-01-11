@@ -457,8 +457,11 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     orders: Schema.Attribute.Relation<'manyToMany', 'api::order.order'>;
-    price: Schema.Attribute.Decimal;
+    Price: Schema.Attribute.Component<'prices.prices', true>;
     publishedAt: Schema.Attribute.DateTime;
+    quantity: Schema.Attribute.Enumeration<
+      ['ml50', 'ml100', 'ml250', 'ml500', 'L1']
+    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
